@@ -1,0 +1,252 @@
+body {
+    background: #F3F5FC;
+}
+
+::placeholder{
+    color: lightgray;
+}
+
+.contenedor{    
+    margin: auto;
+    width: 75%;
+    height: 95vh;
+    background: #F3F5FC;
+}
+
+
+.imgLogo{
+    margin-top: 2%;
+}
+
+.panelIzquierdo{
+    float: left;
+    width: 70%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;    
+    background: #F3F5FC;
+    align-content: center;
+
+}
+
+#textoEntrada{
+    max-width: 90%;
+    height: 90vh;
+    margin-top: 10%;
+    margin-left: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 150%;
+    color: #0A3871;
+    background: #F3F5FC;
+    border: 0;
+}
+
+.aclaracion{
+    margin-top: 10vh;
+    margin-left: 25%;
+    display: flex;
+    padding: 10px;
+    gap: 5px;
+}
+
+p{
+    font-size: 1rem;
+}
+
+.exclamacion{
+    background: #0A3871;
+    color: white;
+    border-radius: 1rem;
+    width: 3%;
+    text-align: center;
+}
+
+.botonera{
+    width: 80%;
+    margin: auto;
+    display: inline;
+    padding: 5%;  
+    
+    align-items: center;
+    vertical-align: bottom;
+}
+
+button{
+    width: 40%;
+    height: 5em;
+    border-radius: 24px;
+}
+
+.botonDesencriptar{
+    float: right;
+}
+
+.panelDerecho{
+    float: right;
+    width: 30%;
+    height: 85vh;
+    background: white;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.18);
+    border-radius: 32px;
+    
+    
+}
+
+.panelImagen{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.Chica{
+    margin-top: 20vh;
+    width: 100%;    
+}
+
+.imgChica{
+    width: 100%;
+    height: auto;
+}
+
+.advertencia{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+}
+
+
+h2 {
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: auto;
+}
+h2 h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.panelTexto{
+    display: none;
+    flex-direction: column;
+    height: 100%;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+#textoSalida{
+    max-width: 90%;
+    height: 70%;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    border: 0;
+}
+
+#botonCopiar{
+    left: 12%;
+    width: 75%;
+    
+}
+
+button:hover{
+    color: white;
+    background: #0A3871;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+
+footer{
+    position: absolute;
+    width: 100%;
+    bottom: 5px;
+    text-align: center;
+    
+
+}
+
+.logo-git{
+    width: 1.7%;
+}
+
+@media screen and (max-width:800px){
+    main {
+        display: flex;
+        flex-direction: column;        
+    }
+    
+    .contenedor {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    p{
+        font-size: .7rem;
+    }
+
+
+    .exclamacion{
+        width: 4%;
+    }
+
+    .panelIzquierdo{
+        width: 100%;
+        height: 70vh;
+        margin: auto;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    .panelDerecho{
+        width: 100%;
+        height: 20vh;
+    }
+
+    .Chica {
+        display: none;
+    }
+
+    .panelImagen{
+        height: 100%;
+    }
+
+
+    #textoSalida{
+        margin: auto;
+        width: 90%;
+        height: 80%;
+        font-size: 1rem;
+    }   
+
+}
+    
+@media screen and (max-width:400px) {
+
+   
+    .exclamacion{
+        width: 5%;
+    }
+
+    .botonera {
+        display: block;
+    }
+    
+    button {
+        width: 100%;
+        height: 4em;
+        margin-block: 5px;
+    }
+
+}
